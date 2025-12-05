@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Hexlet Django Blog</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+{% block title %}Главная — Блог на Django{% endblock %}
+
+{% block content %}
     <h1>Hello, {{ who }}!</h1>
-</body>
-</html>
+    <p>Добро пожаловать в учебный блог на Django от Хекслета!</p>
+{% endblock %}
